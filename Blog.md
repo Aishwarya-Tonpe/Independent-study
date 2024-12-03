@@ -171,6 +171,10 @@ The **Hough Circle Transform** is a method to detect circles in an image by iden
 -   **Challenges**: The method struggled with beads that were faint, occluded, or non-circular.
 -   **Data Augmentation**: Techniques like rotation and contrast adjustment were applied to improve results but had minimal impact on accuracy.
 
+
+#### Here is a confusion matrix detecting the relationship between expected and detected circles for HoughCircles()
+![](conf_matrix.png)**
+
 ### Method 2: Simple Blob Detection
 
 The **Simple Blob Detector** in OpenCV is a feature detector that identifies regions in an image based on certain properties, such as area, circularity, and convexity. This method is useful for detecting small, uniform objects like beads.
@@ -189,9 +193,8 @@ The **Simple Blob Detector** in OpenCV is a feature detector that identifies reg
 -   **Performance**: While faster and easier to implement than Hough Circles, blob detection performed poorly in detecting beads accurately.
 -   **Challenges**: The method was highly sensitive to parameter tuning and failed in scenarios with overlapping or faint beads.
 
-#### Here is a confusion matrix detecting the relationship between expected and detected circles
-![](conf_matrix.png)**
-
+#### Here is a confusion matrix detecting the relationship between expected and detected circles for SimpleBlobDetector()
+![](simpleBlob_conf_mat.png)**
 
 ### Reflections on Accuracy and Future Steps
 
