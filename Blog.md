@@ -1,3 +1,4 @@
+
 # Mixtec Research : Classification Models and Object Detection
 
 ## Overview of the project
@@ -11,13 +12,13 @@ As part of this broader goal, we have been working on training and refining our 
 The Mixtec codices are extraordinary semasiographic manuscripts crafted from deerskin and folded into accordion-style “fold-books,” offering a window into the rich history and culture of the Mixtec civilization. These visually stunning works, like the famed tale of Lord Eight Deer Jaguar Claw—who united much of the Mixtec region—blend art and storytelling, chronicling origin myths, conquests, and the divine lineage of rulers. Referred to as _tonindeye_ (lineage histories), _tnuhu niquidza yya_ (accounts of rulers' deeds), or _ñee ñuhu_ (sacred skins), the codices were sacred records that legitimized rulers by linking them to gods and illustrating their genealogies and rituals. Among the six pre-Hispanic codices—Zouche-Nuttall, Vindobonensis, Colombino-Becker, Bodley, Waecker-Gotter, and Selden—each tells a unique story while preserving the indigenous traditions of a pre-colonial world untouched by European influence.
 
 #### How are they organized and read?
-Mixtec codices are read uniquely, starting from the top right and following red lines that divide the page into sections. Readers navigate scene-by-scene in a zig-zag pattern, reading down a section, then turning to read the next section in the opposite direction.
+Mixtec codices are read uniquely, starting from the top right and following red lines that divide the page into sections. Readers navigate scene-by-scene in a zig-zag pattern, reading down a section, then turning to read the next section in the opposite direction. This zig-zag reading pattern is governed by the **boustrophedon** style, a term that describes the alternating direction of reading, much like the way oxen plow a field.
 
 #### Mixtec Day Signs and Time Notations
 
 The Mixtec and Aztec civilizations shared a sacred calendar system with 20 day signs and a 260-day year, divided into 20 trecenas (13-day periods). Alongside this, the Mixtec used a 365-day solar calendar, primarily for non-date purposes. These two calendars interlocked every 52 years, forming a "calendar round," which was used to date historical events by combining a year from the solar calendar and a day from the sacred calendar. The Mixtec adopted Aztec day signs, as seen in their manuscripts and the Aztec Piedra del Sol sculpture, which displays the 20 day signs around its center.
 
-More Information about Mixtec codices can be found here : [
+More Information about Mixtec codices can be found here : [  
 A Look at the Mixtec Semasiographic Writing System](https://ufdatastudio.com/posts/2023-08-29-mixtec-blog/)
 
 #### Aspects of Mixtec Codices that were relevant to our task
@@ -34,10 +35,12 @@ For example, "Eight Deer" refers to the 8th day in the calendar associated with 
 
 
 **![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUdL4SPpGkYp9t9sR5VuUSuy2NEckY9-Y8zkJgNfjlbbHILGcj2qMwhVjciWggz4Xpi3S2JF8I9GLFjWtyfpXbIjyLVUgwHZSfxhMF7Hhl8JOLPq4wHVW0qzYkfBApawgFZX_hOJa7YJVP6tr0IhNWCXywTeLW0=nw?key=NzZ68Gqa-20rgajpkrZVjg)**
+###### Figure 1 - Day Signs - Adpated from [Reading Mixtec Writing: Tonindeye AKA Nuttall Codex](https://www.youtube.com/watch?v=N06pddQhVwQ&t=106s&ab_channel=TheNahuatlChannel)
 #### 2. Representation of years
 Years were represented by the symbol looking similar to **A** and **O** which essentially represents a bean of sunlight. Years were accompanied by a day sign and **beads** which were used to visually represent the passage of years. These beads are symbols that visually indicate the year’s position or count within the **Calendar Round** cycle. The number of beads could correspond to the number of years within that particular cycle.
 
 **![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUeO0lr_tzNg1qO8xBVAPns3r8KPolypO-0ecEyrh8bCklTTs66fKxPAzaGIaib-4SyHzQdW8OGe4Dt-7cWcHdgWFXbtzmqiHC2w-0fF0giaVbqvzL_tRMo-gyGKSPoo6_CvlK6acDjzgmEkWEymv03hyCYqfkIQ=nw?key=NzZ68Gqa-20rgajpkrZVjg)**
+###### Figure 2 - Years - Adpated from [Reading Mixtec Writing: Tonindeye AKA Nuttall Codex](https://www.youtube.com/watch?v=N06pddQhVwQ&t=106s&ab_channel=TheNahuatlChannel)
 
 #### Classification task
 For this project, our main focus was on classifying the images between two classes :
@@ -45,29 +48,31 @@ For this project, our main focus was on classifying the images between two class
 1. **Name-date**
 
 **![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUfSqOMl8ZkFsWvM3RfprpaX286O-cyXNA3UbbwBP93CTfF4NYYov437aHQMqFb2PTlf11bphDIP1lObNMCmgyfRw14U1PkdTlukKbp3umrHFwUNInLalSVQsG587alUY-iaKqun-C9CnSNk1Qjr3XVMLWL62A4a=nw?key=F7ZThR2_ag4eqdQYUBEyf7Fg)**
+###### Figure 3 - 001-001-a-001-1crocodile - Adapted from [ufdatastudio/mixtec-zouche-nuttall-british-museum](https://huggingface.co/datasets/ufdatastudio/mixtec-zouche-nuttall-british-museum)
 
 3. **Year**
 
 **![](https://lh7-rt.googleusercontent.com/slidesz/AGV_vUeJBVNYTQpzc4G17CgDuyOo5l2Ciwoi1B19thsAFqL0Z-OQTNvLZR0r1z1Y4zIJjxfeWlB57wnZHkT1b9nsSASAbCaJq2r6zdbzd_0clSmfM32efFQ8STyntRv3M3zehZo8vu1ygAnks3my9SCrsLhfxPYbJDqo=nw?key=F7ZThR2_ag4eqdQYUBEyf7Fg)**
+###### Figure 4 -  002-001-a-003-year3reed- adapted from [ufdatastudio/mixtec-zouche-nuttall-british-museum](https://huggingface.co/datasets/ufdatastudio/mixtec-zouche-nuttall-british-museum)
 
 
 ## ViT
 
 ### **Using Vision Transformers for Image Classification: A Deep Dive Into Our Approach**
 
-In tackling the classification task, we had the opportunity to leverage the **Vision Transformer (ViT)** architecture, a cutting-edge tool for image analysis. Unlike traditional Convolutional Neural Networks (CNNs), which have dominated the field of computer vision for years, ViTs bring a fresh perspective by adopting techniques originally designed for natural language processing. This made them a perfect fit for our project, where the goal was to classify images into two distinct categories with high precision.
+In tackling the classification task, we had the opportunity to leverage the **Vision Transformer (ViT)** ([arXiv:2010.11929](https://arxiv.org/abs/2010.11929)) architecture, a cutting-edge tool for image analysis. Unlike traditional Convolutional Neural Networks (CNNs), which have dominated the field of computer vision for years, ViTs bring a fresh perspective by adopting techniques originally designed for natural language processing. This made them a perfect fit for our project, where the goal was to classify images into two distinct categories with high precision.
 
 #### **How Vision Transformer Fits Into the Classification Pipeline**
 
 For this task, we preprocessed the images into smaller patches, each patch serving as a miniature view of the original image. Using ViT, we treated these patches as sequential inputs, similar to how words are handled in NLP tasks. Here's why this approach worked so well:
 
-1.  **Patch Embedding and Positional Encoding:**  
+1.  **Patch Embedding and Positional Encoding:**    
     Each image was divided into fixed-size patches (e.g., 16×16 pixels), and these patches were converted into vector representations. Since maintaining spatial context is crucial in image classification, **positional encodings** were added to ensure the model understood the arrangement of patches.
 
-2.  **Attention Mechanism:**  
+2.  **Attention Mechanism:**    
     The **self-attention mechanism** in ViT allowed the model to focus on the most relevant parts of each image. This was particularly useful for capturing relationships across different regions of the image, enabling the model to build a comprehensive understanding of the content.
 
-3.  **Classification Head:**  
+3.  **Classification Head:**    
     After processing the patch embeddings through the Transformer encoder, a special [CLS] token aggregated the image’s global information. This token's output was used to make classification predictions, resulting in highly accurate results for our dataset.
 
 #### **Why Vision Transformer Was the Right Choice**
@@ -92,7 +97,7 @@ For our project focused on distinguishing Mixtec symbols like "name-date" and "y
 
 #### PyTorch Lightning: Simplifying Deep Learning Workflows
 
-PyTorch Lightning is a high-level framework built on PyTorch, designed to abstract away much of the boilerplate code involved in training and evaluation. With features like automatic checkpointing, multi-GPU support, and standardized structures for model training, it allows developers to focus on research rather than implementation details.
+[PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/) is a high-level framework built on PyTorch, designed to abstract away much of the boilerplate code involved in training and evaluation. With features like automatic checkpointing, multi-GPU support, and standardized structures for model training, it allows developers to focus on research rather than implementation details.
 
 For our task, we used **LightningDataModule**, a specialized component of PyTorch Lightning, to handle the end-to-end data pipeline. This module manages data loading, preprocessing, and splitting into train, validation, and test sets, making the workflow cleaner and more maintainable.
 
@@ -102,17 +107,17 @@ Custom dataloaders are vital when your dataset requires specialized handling. Fo
 
 Here’s how our custom dataloader, `CustomImageDataset`, came into play:
 
-1.  **Loading Images and Labels**:  
+1.  **Loading Images and Labels**:    
     We loaded images from the Hugging Face dataset and mapped their metadata to labels using a custom mapping (`name-date` → 0, `year` → 1). This ensured consistency in how labels were assigned.
 
-2.  **Handling Binary Data**:  
+2.  **Handling Binary Data**:    
     Since some images were stored in binary format, we converted them into RGB using `Pillow`. This step ensured compatibility with our preprocessing pipeline.
 
-3.  **Transformations**:  
+3.  **Transformations**:    
     Preprocessing transformations were applied, such as resizing the images to 224x224 and converting them to tensors. These transformations normalized the input for the model, improving convergence during training.
 
-4.  **Flexibility**:  
-    By implementing the `__len__` and `__getitem__` methods, our dataloader became fully compatible with PyTorch’s `DataLoader`, enabling easy batching, shuffling, and parallel data loading.
+4.  **Flexibility**:    
+    By implementing the `__len__` and `__getitem__` methods, our dataloader became fully compatible with [PyTorch’s `DataLoader`](https://pytorch.org/tutorials/beginner/basics/data_tutorial.html), enabling easy batching, shuffling, and parallel data loading.
 
 #### Splitting Data for Effective Training
 
@@ -120,6 +125,12 @@ Using PyTorch Lightning’s `setup()` method, we split the dataset into training
 
 We also included a simple check for label distribution across the splits, using Python’s `Counter` to confirm that our datasets were balanced, a crucial aspect of training robust classification models.
 
+PytorchLightning label schema:
+
+| **Label ID** | **Class Name** | **Description**                                    |
+|--------------|----------------|----------------------------------------------------|
+| 0            | `name-date`    | Images containing names and dates.|
+| 1            | `year`         | Images containing only a year representation.      |
 
 
 Custom dataloaders provided us with the flexibility to:
@@ -153,17 +164,17 @@ As part of our effort to decode Mixtec codices, we delved into detecting and cou
 
 #### Overview of OpenCV
 
-OpenCV (Open Source Computer Vision Library) is a comprehensive library offering tools for computer vision and image processing. Its ease of use and efficiency make it an excellent choice for tasks like object detection, edge detection, and image transformations. For our project, OpenCV allowed us to implement classical detection algorithms with minimal computational overhead.
+[OpenCV](https://docs.opencv.org/4.x/index.html) (Open Source Computer Vision Library) is a comprehensive library offering tools for computer vision and image processing. Its ease of use and efficiency make it an excellent choice for tasks like object detection, edge detection, and image transformations. For our project, OpenCV allowed us to implement classical detection algorithms with minimal computational overhead.
 
 ### Method 1: Hough Circle Detection
 
-The **Hough Circle Transform** is a method to detect circles in an image by identifying points that fit the parametric equation of a circle. In OpenCV, the `cv2.HoughCircles()` function implements this algorithm, making it easy to apply in real-world tasks.
+The **[Hough Circle Transform](https://docs.opencv.org/4.x/dd/d1a/group__imgproc__feature.html#ga47849c3be0d0406ad3ca45db65a25d2d)** is a method to detect circles in an image by identifying points that fit the parametric equation of a circle. In OpenCV, the `cv2.HoughCircles()` function implements this algorithm, making it easy to apply in real-world tasks.
 
 #### Key Steps in Hough Circle Detection:
 
-1.  Convert the image to grayscale.
-2.  Apply a Gaussian blur to reduce noise.
-3.  Use `cv2.HoughCircles()` to detect circles, with parameters fine-tuned for bead size and contrast.
+1. Convert the image to grayscale.
+2. Apply a Gaussian blur to reduce noise.
+3. Use `cv2.HoughCircles()` to detect circles, with parameters fine-tuned for bead size and contrast.
 
 #### Findings:
 
@@ -177,16 +188,16 @@ The **Hough Circle Transform** is a method to detect circles in an image by iden
 
 ### Method 2: Simple Blob Detection
 
-The **Simple Blob Detector** in OpenCV is a feature detector that identifies regions in an image based on certain properties, such as area, circularity, and convexity. This method is useful for detecting small, uniform objects like beads.
+The **[Simple Blob Detector](https://docs.opencv.org/3.4/d0/d7a/classcv_1_1SimpleBlobDetector.html)** in OpenCV is a feature detector that identifies regions in an image based on certain properties, such as area, circularity, and convexity. This method is useful for detecting small, uniform objects like beads.
 
 #### Key Steps in Simple Blob Detection:
 
-1.  Preprocess the image (grayscale conversion, thresholding).
-2.  Configure blob detector parameters, such as:
+1. Preprocess the image (grayscale conversion, thresholding).
+2. Configure blob detector parameters, such as:
     -   **Min/Max Area**: Size range of blobs to detect.
     -   **Circularity**: Preference for round objects.
     -   **Inertia Ratio**: Helps filter non-uniform blobs.
-3.  Use `cv2.SimpleBlobDetector()` to detect and count blobs.
+3. Use `cv2.SimpleBlobDetector()` to detect and count blobs.
 
 #### Findings:
 
@@ -204,9 +215,9 @@ The Hough Circle method performed better than Simple Blob Detection, but an accu
 
 To achieve better results, labeling the dataset will be a crucial step moving forward. A labeled dataset would allow us to:
 
-1.  Train modern object detection models (e.g., Faster R-CNN or YOLO) on the specific features of beads.
-2.  Leverage the power of supervised learning to improve detection accuracy significantly.
-3.  Build a pipeline capable of handling variations in bead shape, size, and placement.
+1. Train modern object detection models (e.g., Faster R-CNN or YOLO) on the specific features of beads.
+2. Leverage the power of supervised learning to improve detection accuracy significantly.
+3. Build a pipeline capable of handling variations in bead shape, size, and placement.
 
 ## Conclusion
 
@@ -218,3 +229,11 @@ By leveraging advanced tools like Vision Transformers for classification, we ach
 While the experiments revealed the complexities of the Mixtec manuscripts—particularly in accurately detecting and counting beads—they also demonstrated the potential of combining modern and classical approaches in tackling such nuanced tasks. These insights inform our roadmap, laying the groundwork for refining models and expanding to full-page narrative recognition.
 
 This journey underscores the project's broader vision: to not only decode historical manuscripts but also preserve and illuminate the rich cultural heritage of the Mixtec civilization through technology.
+
+## References
+
+1. [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)
+2. [Reading Mixtec Writing: Tonindeye AKA Nuttall Codex](https://www.youtube.com/watch?v=N06pddQhVwQ&t=106s&ab_channel=TheNahuatlChannel)
+3. Stories in Red and Black Pictorial Histories of the Aztecs and Mixtecs
+   by  Elizabeth Hill Boone
+4. The Mixtecs of Colonial Oaxaca Ñudzahui History, Sixteenth Through Eighteenth Centuries by Kevin Terraciano
